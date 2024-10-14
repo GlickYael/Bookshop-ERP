@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <h1>Bookshop ERP</h1>
+            <div id="operationsNav">
+                <button id="addBookBtn">+ New Book</button>
+                <button id="initDB_Btn">Load Data</button>
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="he">עברית</option>
+                </select>
+            </div>
+        </nav>
+        <section id="mainSection">
+            <div id="booksContainer">
+                <div id="title" class="bookInList">
+                    <p class="idInTable" id="tableId">Id</p>
+                    <div class="titleInTable">
+                        <p id="tableTitle">Title</p><p id="titleSort">↑</p>
+                    </div>
+                    <div class="priceInTable">
+                        <p id="tablePrice">Price</p><p id="priceSort">↑</p>
+                    </div>
+                    <p class="actionInTable" id="tableActions">Actions</p>
+                </div>
+                <div id="booksList">
+                </div>
+            </div>
+            <div id="pagingContainer">
+                <button id="prevPageBtn">Previous</button>
+                <div id="pagesButtons"></div>
+                <button id="nextPageBtn">Next</button>
+            </div>
+        </section>
+        <section id="sideShow">
+        </section>
+    </main>
+    <script src="./js/nextId.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/view.js"></script>
+    <script src="./js/booksCRUD.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
